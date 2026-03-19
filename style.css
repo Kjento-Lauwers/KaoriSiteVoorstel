@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -165,4 +166,17 @@ footer {
     .card {
         padding: 30px;
     }
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* NAV ACTIVE LINK */
+nav a.active {
+    color: #ff4d6d;
+    border-bottom: 2px solid #ff4d6d;
 }
