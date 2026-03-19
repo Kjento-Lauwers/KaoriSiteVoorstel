@@ -145,31 +145,29 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
+
+    .menu-toggle {
+        display: block;
     }
 
     nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav a {
+        padding: 15px;
+        display: block;
+    }
+
+    nav.active {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 80px 15px;
-    }
-
-    .hero h2 {
-        font-size: 1.6rem;
-    }
-
-    section {
-        padding: 40px 15px;
-    }
-
-    .card {
-        padding: 30px;
     }
 }
 
