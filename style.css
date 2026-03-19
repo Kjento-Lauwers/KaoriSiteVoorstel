@@ -10,10 +10,10 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0f0f0f;
+    background: #121212;
     color: white;
     line-height: 1.6;
-    padding-top: 80px; /* belangrijk voor fixed navbar */
+    padding-top: 80 px; /* belangrijk voor fixed navbar */
 }
 
 /* HEADER (FIXED) */
@@ -21,7 +21,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100 %;
     
     display: flex;
     justify-content: space-between;
@@ -36,16 +36,16 @@ header {
 
 /* scroll effect */
 header.scrolled {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba (0, 0, 0, 0.8);
+    backdrop-filter: blur (10 px);
 }
 
 nav a {
-    margin-left: 15px;
+    margin-left: 15 px;
     text-decoration: none;
     color: white;
-    font-size: 14px;
-    transition: 0.3s;
+    font-size: 14 px;
+    transition: 0.3 s;
 }
 
 nav a:hover {
@@ -55,11 +55,11 @@ nav a:hover {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 100 px 20 px;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
+    font-size: 2.2 rem;
 }
 
 .hero p {
@@ -68,8 +68,8 @@ nav a:hover {
 
 /* SECTIONS */
 section {
-    padding: 60px 20px;
-    max-width: 1000px;
+    padding: 60 px 20 px;
+    max-width: 1000 px;
     margin: auto;
 }
 
