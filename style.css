@@ -13,18 +13,31 @@ body {
     background: #0f0f0f;
     color: white;
     line-height: 1.6;
+    padding-top: 80px; /* belangrijk voor fixed navbar */
 }
 
-/* HEADER */
+/* HEADER (FIXED) */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     padding: 15px 20px;
     background: #000;
-    position: sticky;
-    top: 0;
+    
     z-index: 1000;
+    transition: 0.3s;
+}
+
+/* scroll effect */
+header.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
 }
 
 nav a {

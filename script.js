@@ -1,5 +1,7 @@
 const sections = document.querySelectorAll("section");
+const header = document.querySelector("header");
 
+/* scroll animatie sections */
 sections.forEach(section => {
     section.style.opacity = 0;
     section.style.transform = "translateY(40px)";
@@ -7,6 +9,8 @@ sections.forEach(section => {
 });
 
 window.addEventListener("scroll", () => {
+
+    /* fade-in sections */
     sections.forEach(section => {
         const top = section.getBoundingClientRect().top;
 
@@ -15,4 +19,11 @@ window.addEventListener("scroll", () => {
             section.style.transform = "translateY(0)";
         }
     });
+
+    /* navbar effect */
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
 });
