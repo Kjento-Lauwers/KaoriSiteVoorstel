@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <title>Portfolio - Jouw Naam</title>
 
-    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +12,7 @@
 <header>
     <h1>Jouw Naam</h1>
 
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
 
     <nav id="nav">
         <a href="#home">Home</a>
@@ -28,33 +24,6 @@
     </nav>
 </header>
 
-<section id="portfolio">
-    <h2>Mijn werk</h2>
-    <div class="grid">
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <div class="overlay">Project 1</div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <div class="overlay">Project 2</div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <div class="overlay">Project 3</div>
-        </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300" alt="">
-            <div class="overlay">Project 4</div>
-        </div>
-
-    </div>
-</section>
-
 <section id="home" class="hero">
     <h2>Grafisch Ontwerper in opleiding</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -62,7 +31,7 @@
 
 <section id="about">
     <h2>Over mij</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </section>
 
 <section id="skills">
@@ -78,16 +47,28 @@
 <section id="portfolio">
     <h2>Mijn werk</h2>
     <div class="grid">
-        <div class="card">Project 1</div>
-        <div class="card">Project 2</div>
-        <div class="card">Project 3</div>
-        <div class="card">Project 4</div>
+
+        <div class="card" onclick="openModal('Project 1')">
+            <img src="https://via.placeholder.com/400">
+            <div class="overlay">Bekijk</div>
+        </div>
+
+        <div class="card" onclick="openModal('Project 2')">
+            <img src="https://via.placeholder.com/400">
+            <div class="overlay">Bekijk</div>
+        </div>
+
+        <div class="card" onclick="openModal('Project 3')">
+            <img src="https://via.placeholder.com/400">
+            <div class="overlay">Bekijk</div>
+        </div>
+
     </div>
 </section>
 
 <section id="cv">
     <h2>CV</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
 </section>
 
 <section id="contact">
@@ -98,6 +79,15 @@
 <footer>
     <p>© 2026 Jouw Naam</p>
 </footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p>Lorem ipsum dolor sit amet, project uitleg hier.</p>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
